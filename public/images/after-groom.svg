@@ -1,0 +1,16 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 900 1125" role="img" aria-labelledby="title desc">
+  <title id="title">Dog after grooming</title>
+  <desc id="desc">A clean illustrated dog after a grooming appointment.</desc>
+  <rect width="900" height="1125" fill="#e0f2fe"/>
+  <circle cx="450" cy="425" r="245" fill="#d9b08c"/>
+  <ellipse cx="312" cy="370" rx="80" ry="115" fill="#b77f55"/>
+  <ellipse cx="588" cy="370" rx="80" ry="115" fill="#b77f55"/>
+  <circle cx="450" cy="500" r="185" fill="#e4bea0"/>
+  <circle cx="385" cy="468" r="22" fill="#1e293b"/>
+  <circle cx="515" cy="468" r="22" fill="#1e293b"/>
+  <ellipse cx="450" cy="540" rx="42" ry="30" fill="#5a3324"/>
+  <path d="M392 608c43 32 76 32 116 0" fill="none" stroke="#5a3324" stroke-width="16" stroke-linecap="round"/>
+  <path d="M230 790c100-145 345-145 440 0v255H230z" fill="#e4bea0"/>
+  <path d="M350 780h200l-100 95z" fill="#0891b2"/>
+  <text x="450" y="1020" text-anchor="middle" font-family="Arial, sans-serif" font-size="54" font-weight="700" fill="#1e293b">After</text>
+</svg>
