@@ -1,5 +1,5 @@
-import Link from 'next/link'
 import Image from 'next/image'
+import Link from 'next/link'
 
 import { SALON } from '@/lib/constants'
 
@@ -36,9 +36,20 @@ export function Footer() {
           </div>
         </div>
         <div className="mt-8 flex flex-col gap-2 border-t border-background/15 pt-6 text-xs text-background/65 sm:flex-row sm:items-center sm:justify-between">
-          <p>© 2026 • Upland Petgrommers • All Rights Reserved.</p>
+          <p>{'\u00a9'} 2026 {'\u2022'} Upland Petgrommers {'\u2022'} All Rights Reserved.</p>
           <p>Built for customer convenience, easy booking, and a smoother salon experience.</p>
         </div>
+        <p className="mt-4 text-center text-xs text-background/55">
+          This website is powered by{' '}
+          <a
+            href="https://gamahsoft.com"
+            target="_blank"
+            rel="noreferrer"
+            className="font-medium text-background/75 underline-offset-4 hover:text-background hover:underline"
+          >
+            Gamahsoft.com
+          </a>
+        </p>
       </div>
     </footer>
   )

@@ -114,7 +114,7 @@ export function faqJsonLd() {
         name: 'Can I book online?',
         acceptedAnswer: {
           '@type': 'Answer',
-          text: 'Yes. Booking buttons open the Square Appointments flow so clients can pick an available service and time.',
+          text: 'Yes. Booking buttons open the Square Appointments flow in a new secure tab so clients can pick an available service and time.',
         },
       },
       {

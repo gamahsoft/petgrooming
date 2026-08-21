@@ -14,7 +14,7 @@ const faqs = [
   {
     question: 'Can I book online?',
     answer:
-      'Yes. Every booking button opens the Square Appointments flow so clients can pick an available service and time.',
+      'Yes. Every booking button opens the Square Appointments flow in a new secure tab so clients can pick an available service and time.',
   },
   {
     question: 'Do you groom anxious dogs?',

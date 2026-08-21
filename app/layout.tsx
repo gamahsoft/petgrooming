@@ -31,6 +31,10 @@ export const metadata: Metadata = {
   alternates: {
     canonical: '/',
   },
+  icons: {
+    icon: '/icon.png',
+    apple: '/apple-icon.png',
+  },
   openGraph: {
     title: 'Upland Pet Grooming | Calm, Clean Dog Grooming',
     description:
