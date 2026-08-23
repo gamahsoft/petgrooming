@@ -12,8 +12,8 @@ export function Footer() {
             <Image
               src="/images/upland-pet-grooming-logo.png"
               alt={SALON.name}
-              width={300}
-              height={106}
+              width={1920}
+              height={819}
               className="h-auto w-56 rounded-md bg-white p-2"
             />
             <p className="mt-2 max-w-xl text-sm text-background/75">

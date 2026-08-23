@@ -25,10 +25,11 @@ export function Header() {
           <Image
             src="/images/upland-pet-grooming-logo.png"
             alt={SALON.name}
-            width={260}
-            height={92}
+            width={1920}
+            height={819}
             priority
-            className="h-12 w-36 object-contain object-left min-[380px]:w-44 sm:h-16 sm:w-60 lg:w-72"
+            sizes="(min-width: 1280px) 225px, (min-width: 1024px) 188px, (min-width: 640px) 150px, 112px"
+            className="h-12 w-auto max-w-[44vw] object-contain object-left min-[380px]:h-14 sm:h-16 lg:h-20 xl:h-24"
           />
         </Link>
         <nav className="hidden items-center gap-6 text-sm font-medium text-muted-foreground md:flex">

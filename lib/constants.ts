@@ -67,11 +67,11 @@ export const FALLBACK_SERVICES = [
 
 export const FALLBACK_TESTIMONIALS = [
   {
-    clientName: 'Maya R.',
-    dogName: 'Coco',
+    clientName: 'Samantha R.',
+    dogName: 'Simba',
     rating: 5,
     quote:
-      'Coco came home calm, fluffy, and smelling amazing. The online booking made it easy to grab the exact time I needed.',
+      'Simba came home calm, fluffy, and smelling amazing. The online booking made it easy to grab the exact time I needed.',
   },
   {
     clientName: 'James L.',
