@@ -39,7 +39,7 @@ export function HeroSection() {
                 </a>
               </div>
             </div>
-            <div className="grid gap-3">
+            <div className="col-span-2 grid gap-3 sm:col-span-1">
               <div className="flex gap-3">
                 <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
                 <div>
@@ -59,7 +59,7 @@ export function HeroSection() {
                   <p className="font-semibold text-foreground">Email</p>
                   <a
                     href={`mailto:${SALON.email}`}
-                    className="mt-1 inline-flex break-all font-medium text-primary underline-offset-4 hover:underline"
+                    className="mt-1 inline-flex whitespace-nowrap text-xs font-medium text-primary underline-offset-4 hover:underline min-[420px]:text-sm sm:text-[13px] md:text-sm"
                     aria-label={`Email ${SALON.name} at ${SALON.email}`}
                   >
                     {SALON.email}
