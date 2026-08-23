@@ -2,6 +2,7 @@
 
 import { getPayloadClient } from '@/lib/payload'
 import { hasUsableDatabaseUri } from '@/lib/env'
+import { sendInquiryEmail } from '@/lib/email'
 
 type InquiryState = {
   message: string
@@ -78,35 +79,44 @@ export async function submitInquiry(
     }
   }
 
-  if (!hasUsableDatabaseUri()) {
-    return {
-      ok: true,
-      message: 'Thanks. Your inquiry is ready to submit once the database is connected.',
+  if (hasUsableDatabaseUri()) {
+    try {
+      const payload = await getPayloadClient()
+
+      await payload.create({
+        collection: 'inquiries',
+        data: {
+          name,
+          email,
+          phone,
+          dogName,
+          message,
+        },
+      })
+    } catch (error) {
+      console.error('Failed to save inquiry to Payload.', error)
     }
   }
 
   try {
-    const payload = await getPayloadClient()
-
-    await payload.create({
-      collection: 'inquiries',
-      data: {
-        name,
-        email,
-        phone,
-        dogName,
-        message,
-      },
+    await sendInquiryEmail({
+      name,
+      email,
+      phone,
+      dogName,
+      message,
     })
 
     return {
       ok: true,
       message: 'Thanks. We received your inquiry and will follow up soon.',
     }
-  } catch {
+  } catch (error) {
+    console.error('Failed to send inquiry email.', error)
+
     return {
       ok: false,
-      message: 'Something went wrong. Please call the salon or try again shortly.',
+      message: 'Something went wrong sending your inquiry. Please call or email the salon directly.',
     }
   }
 }
