@@ -1,4 +1,4 @@
-import { Clock, MapPin, Phone } from 'lucide-react'
+import { Clock, Mail, MapPin, Phone } from 'lucide-react'
 import type { ElementType } from 'react'
 
 import { ContactForm } from '@/components/contact-form'
@@ -63,6 +63,23 @@ export function ContactSection({ headingLevel = 'h1' }: { headingLevel?: 'h1' | 
                 aria-label={`Call ${SALON.name} at ${SALON.phone}`}
               >
                 {SALON.phone}
+              </a>
+            </CardContent>
+          </Card>
+          <Card>
+            <CardHeader>
+              <CardTitle className="flex items-center gap-2 text-lg">
+                <Mail className="h-5 w-5 text-accent" />
+                Email
+              </CardTitle>
+            </CardHeader>
+            <CardContent>
+              <a
+                href={`mailto:${SALON.email}`}
+                className="font-medium text-primary underline-offset-4 hover:underline"
+                aria-label={`Email ${SALON.name} at ${SALON.email}`}
+              >
+                {SALON.email}
               </a>
             </CardContent>
           </Card>
