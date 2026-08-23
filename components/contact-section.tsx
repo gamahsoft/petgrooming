@@ -28,7 +28,17 @@ export function ContactSection({ headingLevel = 'h1' }: { headingLevel?: 'h1' | 
                 Salon location
               </CardTitle>
             </CardHeader>
-            <CardContent className="text-muted-foreground">{SALON.address}</CardContent>
+            <CardContent>
+              <a
+                href={SALON.mapsUrl}
+                target="_blank"
+                rel="noreferrer"
+                className="font-medium text-primary underline-offset-4 hover:underline"
+                aria-label={`Open ${SALON.name} location in maps`}
+              >
+                {SALON.address}
+              </a>
+            </CardContent>
           </Card>
           <Card>
             <CardHeader>

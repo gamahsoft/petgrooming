@@ -1,4 +1,4 @@
-import { ArrowRight, Clock, MapPin, Phone, Sparkles } from 'lucide-react'
+import { ArrowRight, Clock, Mail, MapPin, Phone, Sparkles } from 'lucide-react'
 import Link from 'next/link'
 
 import { BeforeAfterSlider } from '@/components/before-after-slider'
@@ -27,20 +27,43 @@ export function HeroSection() {
               <MapPin className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
               <div>
                 <p className="font-semibold text-foreground">Address</p>
-                <p className="mt-1 leading-5 text-muted-foreground">{SALON.address}</p>
+                <a
+                  href={SALON.mapsUrl}
+                  target="_blank"
+                  rel="noreferrer"
+                  className="mt-1 inline-flex leading-5 text-primary underline-offset-4 hover:underline"
+                  aria-label={`Open ${SALON.name} location in maps`}
+                >
+                  {SALON.address}
+                </a>
               </div>
             </div>
-            <div className="flex gap-3">
-              <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
-              <div>
-                <p className="font-semibold text-foreground">Phone</p>
-                <a
-                  href={`tel:${SALON.phoneE164}`}
-                  className="mt-1 inline-flex font-medium text-primary underline-offset-4 hover:underline"
-                  aria-label={`Call ${SALON.name} at ${SALON.phone}`}
-                >
-                  {SALON.phone}
-                </a>
+            <div className="grid gap-3">
+              <div className="flex gap-3">
+                <Phone className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <div>
+                  <p className="font-semibold text-foreground">Phone</p>
+                  <a
+                    href={`tel:${SALON.phoneE164}`}
+                    className="mt-1 inline-flex font-medium text-primary underline-offset-4 hover:underline"
+                    aria-label={`Call ${SALON.name} at ${SALON.phone}`}
+                  >
+                    {SALON.phone}
+                  </a>
+                </div>
+              </div>
+              <div className="flex gap-3">
+                <Mail className="mt-0.5 h-4 w-4 shrink-0 text-accent" />
+                <div className="min-w-0">
+                  <p className="font-semibold text-foreground">Email</p>
+                  <a
+                    href={`mailto:${SALON.email}`}
+                    className="mt-1 inline-flex break-all font-medium text-primary underline-offset-4 hover:underline"
+                    aria-label={`Email ${SALON.name} at ${SALON.email}`}
+                  >
+                    {SALON.email}
+                  </a>
+                </div>
               </div>
             </div>
             <div className="flex gap-3">

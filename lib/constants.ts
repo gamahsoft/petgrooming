@@ -2,7 +2,10 @@ export const SALON = {
   name: 'Upland Pet Grooming',
   phone: '(909) 256-4147',
   phoneE164: '+19092564147',
+  email: 'uplandpetgrooming@gmail.com',
   address: '931 W Foothill Blvd, Upland, CA 91786',
+  mapsUrl:
+    'https://www.google.com/maps/search/?api=1&query=931%20W%20Foothill%20Blvd%2C%20Upland%2C%20CA%2091786',
   streetAddress: '931 W Foothill Blvd',
   city: 'Upland',
   region: 'CA',
