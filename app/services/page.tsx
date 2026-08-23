@@ -8,7 +8,7 @@ import { buildPageMetadata, faqJsonLd } from '@/lib/seo'
 export const metadata = buildPageMetadata({
   title: 'Dog Grooming Services & Pricing',
   description:
-    'Compare bath and brush, full groom, and luxury spa dog grooming packages with starting prices by dog size.',
+    'Compare bath and brush, full groom, and luxury spa dog grooming packages specializing in all breeds with starting prices by dog size.',
   path: '/services',
 })
 
@@ -26,7 +26,7 @@ export default async function ServicesPage() {
             Services & pricing
           </p>
           <h1 className="mt-3 max-w-3xl text-3xl font-semibold tracking-tight sm:text-4xl md:text-5xl">
-            Clear grooming packages for every coat, size, and comfort level.
+            Clear grooming packages specializing in all breeds, coat types, sizes, and comfort levels.
           </h1>
         </div>
         <BookingDialog />

@@ -20,7 +20,8 @@ export function HeroSection() {
           </h1>
           <p className="mt-3 max-w-2xl text-sm leading-6 text-muted-foreground sm:mt-4 sm:text-lg sm:leading-8">
             Book bath, brush, full groom, and luxury coat care online in seconds. Our groomers
-            focus on comfort, clean styling, and a pick-up-ready finish.
+            specialize in all breeds with a focus on comfort, clean styling, and a pick-up-ready
+            finish.
           </p>
           <div className="mt-4 grid max-w-2xl grid-cols-2 gap-3 rounded-lg border bg-background/85 p-3 text-sm shadow-sm backdrop-blur sm:mt-5 sm:grid-cols-3 sm:p-4">
             <div className="col-span-2 flex gap-3 sm:col-span-1">

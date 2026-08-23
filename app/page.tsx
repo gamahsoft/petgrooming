@@ -13,7 +13,7 @@ export const revalidate = 300
 export const metadata = buildPageMetadata({
   title: 'Dog Grooming in Upland, CA',
   description:
-    'Schedule dog grooming in Upland for bath and brush, full groom, and luxury spa packages with clear pricing and online booking.',
+    'Schedule dog grooming in Upland specializing in all breeds for bath and brush, full groom, and luxury spa packages with clear pricing and online booking.',
   path: '/',
 })
 

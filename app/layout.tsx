@@ -19,7 +19,7 @@ export const metadata: Metadata = {
     template: '%s | Upland Pet Grooming',
   },
   description:
-    'Book dog grooming in Upland, CA for bath, brush, full groom, and luxury spa services with simple Square appointment scheduling.',
+    'Book dog grooming in Upland, CA specializing in all breeds for bath, brush, full groom, and luxury spa services with simple Square appointment scheduling.',
   applicationName: SALON.name,
   creator: SALON.name,
   publisher: SALON.name,
@@ -38,7 +38,7 @@ export const metadata: Metadata = {
   openGraph: {
     title: 'Upland Pet Grooming | Calm, Clean Dog Grooming',
     description:
-      'Book dog grooming in Upland, CA for bath, brush, full groom, and luxury spa services.',
+      'Book dog grooming in Upland, CA specializing in all breeds for bath, brush, full groom, and luxury spa services.',
     url: '/',
     siteName: SALON.name,
     locale: 'en_US',
@@ -48,7 +48,7 @@ export const metadata: Metadata = {
     card: 'summary_large_image',
     title: 'Upland Pet Grooming | Calm, Clean Dog Grooming',
     description:
-      'Book dog grooming in Upland, CA for bath, brush, full groom, and luxury spa services.',
+      'Book dog grooming in Upland, CA specializing in all breeds for bath, brush, full groom, and luxury spa services.',
   },
   robots: {
     index: true,

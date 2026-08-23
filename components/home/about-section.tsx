@@ -9,7 +9,7 @@ const values = [
   {
     icon: Scissors,
     title: 'Coat-aware styling',
-    text: 'Every trim is guided by breed, lifestyle, season, and your preferred finish.',
+    text: 'Specializing in all breeds, every trim is guided by lifestyle, season, and your preferred finish.',
   },
   {
     icon: ShieldCheck,
