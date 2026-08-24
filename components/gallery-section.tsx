@@ -1,11 +1,7 @@
 import type { ElementType } from 'react'
 import { ClipboardCheck, HeartHandshake, SmilePlus } from 'lucide-react'
 
-import { GalleryGrid } from '@/components/gallery-grid'
-import type { GalleryImage } from '@/lib/cms'
-
 type GallerySectionProps = {
-  images: GalleryImage[]
   headingLevel?: 'h1' | 'h2'
 }
 
@@ -27,7 +23,7 @@ const personalizedCare = [
   },
 ]
 
-export function GallerySection({ images, headingLevel = 'h1' }: GallerySectionProps) {
+export function GallerySection({ headingLevel = 'h1' }: GallerySectionProps) {
   const Heading = headingLevel as ElementType
 
   return (
@@ -56,7 +52,6 @@ export function GallerySection({ images, headingLevel = 'h1' }: GallerySectionPr
           </div>
         ))}
       </div>
-      <GalleryGrid images={images} />
     </section>
   )
 }

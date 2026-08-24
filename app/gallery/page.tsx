@@ -1,5 +1,4 @@
 import { GallerySection } from '@/components/gallery-section'
-import { getGalleryImages } from '@/lib/cms'
 import { buildPageMetadata } from '@/lib/seo'
 
 export const metadata = buildPageMetadata({
@@ -9,10 +8,6 @@ export const metadata = buildPageMetadata({
   path: '/gallery',
 })
 
-export const revalidate = 300
-
-export default async function GalleryPage() {
-  const images = await getGalleryImages()
-
-  return <GallerySection images={images} />
+export default function GalleryPage() {
+  return <GallerySection />
 }
