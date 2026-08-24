@@ -1,6 +1,7 @@
 import { ContactSection } from '@/components/contact-section'
 import { GallerySection } from '@/components/gallery-section'
 import { AboutSection } from '@/components/home/about-section'
+import { GroomingBenefits } from '@/components/home/grooming-benefits'
 import { HeroSection } from '@/components/home/hero-section'
 import { ServicePreview } from '@/components/home/service-preview'
 import { TestimonialCarousel } from '@/components/home/testimonial-carousel'
@@ -29,6 +30,7 @@ export default async function HomePage() {
       <JsonLd data={localBusinessJsonLd()} />
       <HeroSection />
       <AboutSection />
+      <GroomingBenefits />
       <ServicePreview services={services} />
       <TestimonialCarousel testimonials={testimonials} />
       <GallerySection images={galleryImages} headingLevel="h2" />
